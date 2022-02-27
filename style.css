@@ -1,0 +1,156 @@
+<!--Index Page Style-->
+*{
+  margin: 0;
+  padding: 0;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", monospace;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  color: aliceblue;
+  align-items: center;
+  background-image:radial-gradient(transparent, black), url(GreyBackdrop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.logoImage {
+  align-items: center;
+
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 2px 100px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image{
+  margin: -20px 0px;
+  align-items: center;
+  flex-direction: column;
+}
+
+#square {
+  display: flex;
+  min-width: 300px;
+  min-height: 300px;
+  margin-bottom: 100px;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease-in;
+  box-shadow: 3px 3px 5px #000000;
+}
+
+.Login,
+.SignUp,
+.ForgotPass {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  border-radius: 2px;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #000000;
+  box-shadow: 3px 3px 5px #3f3f3f;
+}
+  
+.Login {
+  transform: translateZ(50px);
+}
+  
+.SignUp {
+  transform: rotateY(-90deg) translateZ(50px);
+}
+  
+.ForgotPass {
+  transform: rotateY(90deg) translateZ(50px);
+}
+  
+.actions button {
+  border: 0;
+  text-align: center;
+  outline: none;
+  font-size: 20px;
+  min-height: 30px;
+  padding: 10px 20px;
+  border-radius: 2px;
+  background-color: rgb(146, 146, 146);
+}
+  
+.container h1 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+  
+.container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+  
+.container form input,
+.container form button,
+.container form h5 {
+  margin-bottom: 15px;
+}
+  
+.container form input {
+  text-align: center;
+  border: 0;
+  padding: 10px 8px;
+  min-height: 40px;
+  font-size: 20px;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+  
+.container form button {
+  text-align: center;
+  border: 0;
+  padding: 10px 0;
+  outline: none;
+  min-height: 30px;
+  font-size: 20px;
+  border-radius: 2px;
+  background-color: rgb(190, 190, 190);
+}
+  
+.container form button #frontSide {
+  display: none;
+}
+  
+  .container .actions {
+  display: flex;
+}
+  
+  .container .actions button {
+  margin-right: 10px;
+}
+  
+@media (min-width: 600px) {
+  .container {
+    width: 500px;
+    padding: 50px 100px;
+    height: 500px;
+    background-image: radial-gradient(to top, #000000, #303030, #ffffff);
+  }
+}
